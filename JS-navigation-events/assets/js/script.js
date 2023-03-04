@@ -1,16 +1,16 @@
-let tabs = document.querySelectorAll(".tabs h3");
-let tabContents = document.querySelectorAll(".tab-content div");
+let tabs = document.querySelectorAll(".container .tabs h3");
+let tabContents = document.querySelectorAll(".container .tab-content div");
 //console.log(tabs, tabContents);
 
-tabs.forEach((tabs, index =>{
-    tabs.addEventListener("click", ()=>{
-        tabContents.forEach(content =>{
-            content.classList.remove("active");
-        });
-        tabs.forEach(tab=>{
-            tab.classList.remove("active");
-        });
-        tabContents[index].classList.add("active");
-        tabs[index].classList.add("active");
+function showPanel(panelIndex){
+    tabContents.forEach(function(node){
+        node.style.display="none";
     });
-}));
+    tabContents[panelIndex].style.display="block";
+};
+
+
+
+
+
+

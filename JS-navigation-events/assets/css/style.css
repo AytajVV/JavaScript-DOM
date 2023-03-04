@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #4d5bf9;
+  background-color: gray;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 }
 
 h3 {
-  background-color: #e4e9fd;
+  background-color: white;
   text-align: center;
   padding: 15px 0;
   cursor: pointer;
@@ -45,12 +45,4 @@ h3 {
 }
 .tab-content div {
   display: none;
-}
-.tab-content .active {
-  display: block;
-}
-
-.tabs .active {
-  background-color: #ffffff;
-  color: #4d5bf9;
 }/*# sourceMappingURL=style.css.map */
